@@ -31,6 +31,9 @@ public class InstallUtils {
         StringBuilder successMsg = null;
         StringBuilder errorMsg = null;
         try {
+
+
+
             //静默安装需要root权限
             execLinuxCommand(packageClassName,className);
             process = Runtime.getRuntime().exec("su");

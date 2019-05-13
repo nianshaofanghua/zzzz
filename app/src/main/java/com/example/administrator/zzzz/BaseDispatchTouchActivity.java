@@ -53,4 +53,9 @@ public class BaseDispatchTouchActivity  extends AppCompatActivity implements RxT
         Intent intent = new Intent(this,MainActivity.class);
         startActivity(intent);
     }
+
+    @Override
+    public void doComplete() {
+
+    }
 }
