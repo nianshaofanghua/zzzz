@@ -52,7 +52,7 @@ public class RxTimerUtil {
                     @Override
                     public void run() throws Exception {
                         if (iRxNext != null) {
-    iRxNext.doComplete();
+                            iRxNext.doComplete();
                         }
                     }
                 })
@@ -130,8 +130,10 @@ public class RxTimerUtil {
 
     public interface IRxNext {
         void doIntent();
+
         void doComplete();
     }
+
 
     public interface IRxLastTime {
         void doLast(String time);
